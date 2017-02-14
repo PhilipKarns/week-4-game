@@ -7,8 +7,9 @@ img {
 	height: 200px;
 }
 
-#randomNumber {
+#randomNumber, #userScore, #wins, #losses {
 	text-align: center;
 	font-size: 50px;
 	padding-top: 20px;
 }
+
