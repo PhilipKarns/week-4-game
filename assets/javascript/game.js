@@ -41,7 +41,7 @@ $(document).ready(function() {
 	//reset function
 	function reset() {
 		//reset random #
-		var randomNumber = Math.floor(Math.random() * 102) + 19;
+		randomNumber = Math.floor(Math.random() * 102) + 19;
 		$("#randomNumber").html(randomNumber);
 		
 		//reset user score
@@ -49,10 +49,10 @@ $(document).ready(function() {
 		$("#userScore").html(userScore);
 		
 		//reset random # for each crystal
-		var array = [];
+		array = [];
 		
 		while(array.length < 4) {
-		var randomGemNumber = Math.floor(Math.random() * 12) + 1;
+		randomGemNumber = Math.floor(Math.random() * 12) + 1;
 		if(array.indexOf(randomGemNumber) > -1) continue;
 		array[array.length] = randomGemNumber;
 		}
@@ -80,7 +80,7 @@ $(document).ready(function() {
     	console.log(userScore);
     	$("#userScore").html(userScore);
 
-    	//determine win/loss
+    		//determine win/loss
 		if (userScore === randomNumber) {
 	      wins++;
 	      $("#wins").html(wins);
@@ -92,5 +92,8 @@ $(document).ready(function() {
 	      $("#losses").html(losses);
 	      reset();
 	    }
-	});
+    });
+    
+
+	
 });
